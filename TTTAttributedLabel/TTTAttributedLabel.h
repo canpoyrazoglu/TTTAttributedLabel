@@ -256,11 +256,15 @@ IB_DESIGNABLE
  */
 @property (nonatomic, strong, readonly) UILongPressGestureRecognizer *longPressGestureRecognizer;
 
+
+@property(readonly, nonatomic) BOOL isTruncated;
+
 ///--------------------------------------------
 /// @name Calculating Size of Attributed String
 ///--------------------------------------------
 
 /**
+ 
  Calculate and return the size that best fits an attributed string, given the specified constraints on size and number of lines.
 
  @param attributedString The attributed string.
